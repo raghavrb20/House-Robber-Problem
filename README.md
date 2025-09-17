@@ -31,6 +31,7 @@ class Solution {
         Integer[] memo = new Integer[n];
         return robHelper(nums, n - 1, memo);
     }
+    
     private int robHelper(int[] nums, int i, Integer[] memo) {
         if (i < 0) return 0;
         if (i == 0) return nums[0];
